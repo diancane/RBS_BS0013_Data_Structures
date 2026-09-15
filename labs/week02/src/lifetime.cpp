@@ -19,6 +19,8 @@ int main() {
     }
 
     // TODO: Explain why dangling must not be dereferenced here.
+    //ans: Temporary` was destroyed when its scope ended at line 19, so "dangling" still holds the old address but the object there no longer exists
+
     // Do not add: std::cout << *dangling;
 
     dangling = nullptr;
